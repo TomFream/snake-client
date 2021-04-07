@@ -27,4 +27,4 @@
   return conn;
 };
 
-module.exports = connect;
+module.exports = { connect };
