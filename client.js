@@ -11,6 +11,14 @@
   // interpret incoming data as text
   conn.setEncoding('utf8'); 
 
+  conn.on('connect', function() {
+    console.log("Successfully connected to the game server!");
+  });
+
+  conn.on('connect', function () {
+    conn.write('Name: Tom');
+  });
+
   conn.on('data', function (data) {
     console.log(`Message from server: ${data}`);
   });
