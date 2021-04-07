@@ -13,10 +13,11 @@
 
   conn.on('connect', function() {
     console.log("Successfully connected to the game server!");
-  });
-
-  conn.on('connect', function () {
     conn.write('Name: Tom');
+    // conn.write('Move: up');
+    // setInterval(function () {
+    //   conn.write('Move: up');
+    // }, 100);
   });
 
   conn.on('data', function (data) {
