@@ -1,7 +1,5 @@
 let connection;
 
-// const writeMessage = require('./message');
-
 const setupInput = function(conn) {
   connection = conn;
   const stdin = process.stdin;
